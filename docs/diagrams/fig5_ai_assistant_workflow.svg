@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1120" viewBox="0 0 1900 1120">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="48" y="58" font-family="Arial" font-size="34" font-weight="700" fill="#17324D">EduQuest AI Tutor Workflow</text>
+<text x="48" y="91" font-family="Arial" font-size="18" fill="#5D7188">Source-verified implementation: authenticated, lesson-aware tutoring with browser-native voice support</text>
+<rect x="70" y="190" width="310" height="165" rx="16" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="70" y="190" width="8" height="165" rx="4" fill="#2563EB" stroke="#2563EB" stroke-width="2"/>
+<text x="94" y="225" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">Student</text>
+<text x="94" y="256" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Text chat or supported voice input</text>
+<text x="94" y="282" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Choose language and tutor mode</text>
+<rect x="500" y="150" width="370" height="235" rx="16" fill="#E7F7F4" stroke="#078B83" stroke-width="2"/>
+<rect x="500" y="150" width="8" height="235" rx="4" fill="#078B83" stroke="#078B83" stroke-width="2"/>
+<text x="524" y="185" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">AI Tutor (verified)</text>
+<text x="524" y="216" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">CHAT · EXPLAIN · SIMPLIFY</text>
+<text x="524" y="241" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">HINT · PRACTICE</text>
+<text x="524" y="266" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">Optional lesson context</text>
+<text x="524" y="291" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">English, Tamil, Hindi, Malayalam,</text>
+<text x="524" y="316" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">Telugu and Kannada</text>
+<rect x="1010" y="190" width="340" height="165" rx="16" fill="#F2EDFB" stroke="#7353B7" stroke-width="2"/>
+<rect x="1010" y="190" width="8" height="165" rx="4" fill="#7353B7" stroke="#7353B7" stroke-width="2"/>
+<text x="1034" y="225" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">Backend AI service</text>
+<text x="1034" y="256" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Authenticated request + validation</text>
+<text x="1034" y="282" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Build language / lesson prompt</text>
+<text x="1034" y="308" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Persist chat messages</text>
+<rect x="1500" y="190" width="320" height="165" rx="16" fill="#FFF4DD" stroke="#D98200" stroke-width="2"/>
+<rect x="1500" y="190" width="8" height="165" rx="4" fill="#D98200" stroke="#D98200" stroke-width="2"/>
+<text x="1524" y="225" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">Google Gemini API</text>
+<text x="1524" y="256" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Backend-only API key</text>
+<text x="1524" y="282" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Network-dependent generation</text>
+<line x1="380" y1="270" x2="500" y2="270" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="870" y1="270" x2="1010" y2="270" stroke="#078B83" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1350" y1="270" x2="1500" y2="270" stroke="#7353B7" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1500" y1="320" x2="1350" y2="320" stroke="#7353B7" stroke-width="2" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<line x1="1010" y1="340" x2="870" y2="340" stroke="#078B83" stroke-width="2" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<line x1="500" y1="340" x2="380" y2="340" stroke="#2563EB" stroke-width="2" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<rect x="500" y="505" width="370" height="140" rx="16" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="500" y="505" width="8" height="140" rx="4" fill="#2563EB" stroke="#2563EB" stroke-width="2"/>
+<text x="524" y="540" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">Chat history</text>
+<text x="524" y="571" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">chat_sessions + chat_messages</text>
+<text x="524" y="597" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Load and continue prior sessions</text>
+<line x1="680" y1="385" x2="680" y2="505" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1010" y="505" width="340" height="140" rx="16" fill="#EAF7EF" stroke="#18834F" stroke-width="2"/>
+<rect x="1010" y="505" width="8" height="140" rx="4" fill="#18834F" stroke="#18834F" stroke-width="2"/>
+<text x="1034" y="540" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">Lesson context (optional)</text>
+<text x="1034" y="571" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">Activity title / description</text>
+<text x="1034" y="596" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">LessonContent, when lessonId is sent</text>
+<line x1="1180" y1="385" x2="1180" y2="505" stroke="#18834F" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="505" width="310" height="140" rx="16" fill="#FFF4DD" stroke="#D98200" stroke-width="2"/>
+<rect x="70" y="505" width="8" height="140" rx="4" fill="#D98200" stroke="#D98200" stroke-width="2"/>
+<text x="94" y="540" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">Voice controls (browser)</text>
+<text x="94" y="571" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">Speech recognition: en / ta / hi</text>
+<text x="94" y="596" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#5D7188" text-anchor="start">Speech synthesis follows language</text>
+<line x1="220" y1="355" x2="220" y2="505" stroke="#D98200" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="760" width="1750" height="170" rx="14" fill="#F7F9FC" stroke="#E5EBF1" stroke-width="1"/>
+<text x="95" y="802" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324D" text-anchor="start">Verified implementation scope</text>
+<rect x="95" y="830" width="390" height="75" rx="16" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="95" y="830" width="8" height="75" rx="4" fill="#2563EB" stroke="#2563EB" stroke-width="2"/>
+<text x="119" y="865" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Five Tutor modes · six languages</text>
+<text x="119" y="896" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">CHAT, EXPLAIN, SIMPLIFY, HINT, PRACTICE</text>
+<rect x="520" y="830" width="390" height="75" rx="16" fill="#E7F7F4" stroke="#078B83" stroke-width="2"/>
+<rect x="520" y="830" width="8" height="75" rx="4" fill="#078B83" stroke="#078B83" stroke-width="2"/>
+<text x="544" y="865" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Lesson context · chat history</text>
+<text x="544" y="896" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">Optional Activity / LessonContent context; saved sessions</text>
+<rect x="1010" y="830" width="760" height="75" rx="16" fill="#FFF4DD" stroke="#D98200" stroke-width="2"/>
+<rect x="1010" y="830" width="8" height="75" rx="4" fill="#D98200" stroke="#D98200" stroke-width="2"/>
+<text x="1034" y="865" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Browser voice · online generation</text>
+<text x="1034" y="896" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">Speech input: English, Tamil, Hindi. Speech output uses browser synthesis. New AI responses require internet.</text>
+<text x="95" y="985" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#5D7188" text-anchor="start">PRACTICE requests may ask for a few practice questions; they are not a separate teacher quiz-authoring workflow.</text>
+</svg>

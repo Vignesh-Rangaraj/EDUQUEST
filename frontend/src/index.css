@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --eq-primary: #2563eb;
+  --eq-secondary: #22c55e;
+  --eq-accent: #f59e0b;
+  --eq-background: #f8fafc;
+  --eq-surface: #ffffff;
+  --eq-text-primary: #1e293b;
+  --eq-text-secondary: #64748b;
+  --eq-border: #e2e8f0;
+  --eq-error: #ef4444;
+  --eq-radius-card: 1rem;
+  --eq-shadow-card: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.dark {
+  color-scheme: dark;
+  --eq-background: #0f172a;
+  --eq-surface: #1e293b;
+  --eq-text-primary: #f1f5f9;
+  --eq-text-secondary: #cbd5e1;
+  --eq-border: #334155;
+}
+
+@layer base {
+  html {
+    font-family: Inter, 'Nunito Sans', 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    color: var(--eq-text-primary);
+    background-color: var(--eq-background);
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--eq-primary);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    color: #ffffff;
+    background-color: var(--eq-primary);
+  }
+}

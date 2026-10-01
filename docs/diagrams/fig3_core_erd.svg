@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1460" viewBox="0 0 2100 1460">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="48" y="58" font-family="Arial" font-size="34" font-weight="700" fill="#17324D">Core EduQuest Entity Relationship Diagram</text>
+<text x="48" y="91" font-family="Arial" font-size="18" fill="#5D7188">Fourteen entities in the manuscript's core schema; connector labels show the documented one-to-many or one-to-one links</text>
+<rect x="70" y="150" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="70" y="150" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="82" y="175" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">School</text>
+<text x="82" y="208" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="82" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">name, code</text>
+<rect x="470" y="150" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="470" y="150" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="482" y="175" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Classroom</text>
+<text x="482" y="208" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="482" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">school_id (FK)</text>
+<text x="482" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">grade, section</text>
+<rect x="870" y="150" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="870" y="150" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="882" y="175" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Teacher</text>
+<text x="882" y="208" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="882" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">user_account_id</text>
+<text x="882" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">classroom_id (FK)</text>
+<rect x="1490" y="150" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="1490" y="150" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="1502" y="175" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Parent</text>
+<text x="1502" y="208" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="1502" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">user_account_id</text>
+<rect x="1490" y="390" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="1490" y="390" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="1502" y="415" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Student</text>
+<text x="1502" y="448" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="1502" y="470" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">user_account_id</text>
+<text x="1502" y="492" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">classroom_id / parent_id</text>
+<text x="1502" y="514" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">xp, level, streaks</text>
+<rect x="470" y="390" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<rect x="470" y="390" width="300" height="34" rx="12" fill="#EAF2FF" stroke="#EAF2FF" stroke-width="0"/>
+<text x="482" y="415" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Module</text>
+<text x="482" y="448" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="482" y="470" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">classroom_id</text>
+<text x="482" y="492" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">created_by_teacher_id</text>
+<rect x="470" y="630" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<rect x="470" y="630" width="300" height="34" rx="12" fill="#EAF2FF" stroke="#EAF2FF" stroke-width="0"/>
+<text x="482" y="655" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">Activity</text>
+<text x="482" y="688" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="482" y="710" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">module_id</text>
+<text x="482" y="732" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">activity_type, status</text>
+<text x="482" y="754" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">xp_reward</text>
+<rect x="70" y="900" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<rect x="70" y="900" width="300" height="34" rx="12" fill="#EAF2FF" stroke="#EAF2FF" stroke-width="0"/>
+<text x="82" y="925" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">LessonContent</text>
+<text x="82" y="958" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="82" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">activity_id (FK)</text>
+<text x="82" y="1002" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">content</text>
+<rect x="470" y="900" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<rect x="470" y="900" width="300" height="34" rx="12" fill="#EAF2FF" stroke="#EAF2FF" stroke-width="0"/>
+<text x="482" y="925" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">GameConfiguration</text>
+<text x="482" y="958" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="482" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">activity_id (FK)</text>
+<text x="482" y="1002" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">configuration_json</text>
+<rect x="870" y="900" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<rect x="870" y="900" width="300" height="34" rx="12" fill="#EAF2FF" stroke="#EAF2FF" stroke-width="0"/>
+<text x="882" y="925" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">QuizQuestion</text>
+<text x="882" y="958" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="882" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">activity_id (FK)</text>
+<text x="882" y="1002" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">question / answer data</text>
+<rect x="1250" y="630" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="1250" y="630" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="1262" y="655" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">StudentProgress</text>
+<text x="1262" y="688" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="1262" y="710" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">student_id, activity_id</text>
+<text x="1262" y="732" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">score, completed</text>
+<rect x="1640" y="630" width="360" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="1640" y="630" width="360" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="1652" y="655" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">StudentXPTransaction</text>
+<text x="1652" y="688" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="1652" y="710" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">student_id, activity_id</text>
+<text x="1652" y="732" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">xp_awarded; append-only</text>
+<rect x="1250" y="900" width="300" height="112" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="1250" y="900" width="300" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="1262" y="925" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">StudentBadge</text>
+<text x="1262" y="958" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="1262" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">student_id</text>
+<text x="1262" y="1002" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">badge_code, earned_at</text>
+<rect x="1640" y="900" width="360" height="135" rx="12" fill="#FFFFFF" stroke="#078B83" stroke-width="2"/>
+<rect x="1640" y="900" width="360" height="34" rx="12" fill="#E7F7F4" stroke="#EAF2FF" stroke-width="0"/>
+<text x="1652" y="925" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">SyncQueue</text>
+<text x="1652" y="958" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">id (PK)</text>
+<text x="1652" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">client_queue_item_id</text>
+<text x="1652" y="1002" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5D7188" text-anchor="start">student_id, action, status</text>
+<line x1="370" y1="205" x2="470" y2="205" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="390" y="190" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="770" y1="180" x2="870" y2="180" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="790" y="165" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="770" y1="225" x2="800" y2="225" stroke="#5D7188" stroke-width="2"/>
+<line x1="800" y1="225" x2="800" y2="450" stroke="#5D7188" stroke-width="2"/>
+<line x1="800" y1="450" x2="1490" y2="450" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1120" y="435" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="620" y1="262" x2="620" y2="390" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="640" y="330" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="1020" y1="262" x2="620" y2="390" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="790" y="325" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="1640" y1="262" x2="1640" y2="390" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1660" y="332" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="620" y1="502" x2="620" y2="630" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="640" y="565" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="770" y1="690" x2="1250" y2="690" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="990" y="675" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="770" y1="750" x2="1640" y2="742" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1120" y="770" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="620" y1="780" x2="220" y2="900" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="385" y="840" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : 0..1</text>
+<line x1="620" y1="780" x2="620" y2="900" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="640" y="845" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : 0..1</text>
+<line x1="720" y1="760" x2="950" y2="900" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="790" y="842" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="1640" y1="540" x2="1400" y2="630" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1480" y="590" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="1640" y1="540" x2="1640" y2="630" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1660" y="582" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="1790" y1="500" x2="2040" y2="500" stroke="#5D7188" stroke-width="2"/>
+<line x1="2040" y1="500" x2="2040" y2="860" stroke="#5D7188" stroke-width="2"/>
+<line x1="2040" y1="860" x2="1400" y2="860" stroke="#5D7188" stroke-width="2"/>
+<line x1="1400" y1="860" x2="1400" y2="900" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1430" y="850" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<line x1="2040" y1="860" x2="1820" y2="860" stroke="#5D7188" stroke-width="2"/>
+<line x1="1820" y1="860" x2="1820" y2="900" stroke="#5D7188" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1850" y="850" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5D7188" text-anchor="start">1 : N</text>
+<rect x="70" y="1110" width="1930" height="235" rx="14" fill="#F7F9FC" stroke="#E5EBF1" stroke-width="1"/>
+<text x="95" y="1150" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17324D" text-anchor="start">Relationship and scope notes</text>
+<text x="95" y="1190" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#24364B" text-anchor="start">School → Classroom → Teacher / Student / Module → Activity → lesson, game, quiz and progress records.</text>
+<text x="95" y="1225" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#24364B" text-anchor="start">Student → progress, XP ledger, badges and sync queue; Parent → Student. Lines follow the manuscript's stated relationships.</text>
+<text x="95" y="1260" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#5D7188" text-anchor="start">UserAccount identifiers are shown as scalar references and omitted as an additional entity to preserve the 14-entity scope.</text>
+<text x="95" y="1300" font-family="Arial, sans-serif" font-size="15" font-weight="400" fill="#B64242" text-anchor="start">Some associations (e.g., module_id, activity_id) are represented by scalar IDs in the current backend model; connector lines indicate logical links.</text>
+</svg>

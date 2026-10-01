@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1240" viewBox="0 0 1900 1240">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="48" y="58" font-family="Arial" font-size="34" font-weight="700" fill="#17324D">Offline Activity Synchronization Sequence</text>
+<text x="48" y="91" font-family="Arial" font-size="18" fill="#5D7188">A completion is persisted locally first; server reconciliation is retried using the same client queue-item identifier</text>
+<rect x="35" y="130" width="230" height="90" rx="14" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="150" y="164" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">Student / UI</text>
+<line x1="150" y1="220" x2="150" y2="1100" stroke="#E5EBF1" stroke-width="2" stroke-dasharray="8 7"/>
+<rect x="335" y="130" width="230" height="90" rx="14" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="450" y="164" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">Local activity +</text>
+<text x="450" y="188" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">repositories</text>
+<line x1="450" y1="220" x2="450" y2="1100" stroke="#E5EBF1" stroke-width="2" stroke-dasharray="8 7"/>
+<rect x="635" y="130" width="230" height="90" rx="14" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="750" y="164" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">Dexie queue</text>
+<line x1="750" y1="220" x2="750" y2="1100" stroke="#E5EBF1" stroke-width="2" stroke-dasharray="8 7"/>
+<rect x="935" y="130" width="230" height="90" rx="14" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="1050" y="164" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">Network + sync</text>
+<text x="1050" y="188" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">service</text>
+<line x1="1050" y1="220" x2="1050" y2="1100" stroke="#E5EBF1" stroke-width="2" stroke-dasharray="8 7"/>
+<rect x="1265" y="130" width="230" height="90" rx="14" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="1380" y="164" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">Authenticated sync</text>
+<text x="1380" y="188" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">endpoint</text>
+<line x1="1380" y1="220" x2="1380" y2="1100" stroke="#E5EBF1" stroke-width="2" stroke-dasharray="8 7"/>
+<rect x="1595" y="130" width="230" height="90" rx="14" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="1710" y="164" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">Sync service +</text>
+<text x="1710" y="188" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="middle">relational DB</text>
+<line x1="1710" y1="220" x2="1710" y2="1100" stroke="#E5EBF1" stroke-width="2" stroke-dasharray="8 7"/>
+<line x1="150" y1="280" x2="450" y2="280" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="300.0" y="270" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">1  Complete activity; compute outcome locally</text>
+<line x1="450" y1="365" x2="750" y2="365" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600.0" y="355" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">2  Save progress + XP transaction</text>
+<line x1="750" y1="450" x2="450" y2="450" stroke="#078B83" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="600.0" y="440" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">3  Persist queue item (UUID, action, payload)</text>
+<line x1="450" y1="535" x2="150" y2="535" stroke="#078B83" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="300.0" y="525" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">4  Show saved result immediately</text>
+<line x1="1050" y1="620" x2="1050" y2="620" stroke="#D98200" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1050.0" y="610" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">5  Online event drains due PENDING items</text>
+<line x1="1050" y1="705" x2="1380" y2="705" stroke="#7353B7" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1215.0" y="695" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">6  Send authenticated batch; mark items PROCESSING</text>
+<line x1="1380" y1="790" x2="1710" y2="790" stroke="#7353B7" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1545.0" y="780" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">7  Validate student ownership; process per item</text>
+<line x1="1710" y1="875" x2="1710" y2="875" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1710.0" y="865" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">8  Check client item ID in sync_queue</text>
+<rect x="1460" y="905" width="405" height="68" rx="12" fill="#EAF7EF" stroke="#18834F" stroke-width="2"/>
+<text x="1662" y="933" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#18834F" text-anchor="middle">Known ID: return success (no reapply)</text>
+<rect x="1460" y="984" width="405" height="68" rx="12" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="1662" y="1012" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2563EB" text-anchor="middle">New ID: apply progress / XP, record ID</text>
+<line x1="1710" y1="1085" x2="1050" y2="1085" stroke="#18834F" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="1380.0" y="1075" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#24364B" text-anchor="middle">9  Return per-item results (partial batches supported)</text>
+<rect x="100" y="1140" width="1640" height="64" rx="12" fill="#F7F9FC" stroke="#E5EBF1" stroke-width="1"/>
+<text x="125" y="1179" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324D" text-anchor="start">10  Client removes confirmed items; failures remain retryable with backoff and the original identifier.</text>
+</svg>

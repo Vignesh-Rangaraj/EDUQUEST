@@ -1,0 +1,29 @@
+<<<<<<< Updated upstream
+@"
+=======
+>>>>>>> Stashed changes
+# Maven build output
+backend/target/
+
+# Node modules
+frontend/node_modules/
+
+# Vite build output
+frontend/dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+<<<<<<< Updated upstream
+Thumbs.db
+"@ | Out-File -Encoding utf8 .gitignore
+=======
+Thumbs.db
+>>>>>>> Stashed changes
+application-local.properties

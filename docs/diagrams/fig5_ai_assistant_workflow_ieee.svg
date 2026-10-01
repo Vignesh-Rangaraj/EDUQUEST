@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1320" viewBox="0 0 1000 1320">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="48" y="58" font-family="Arial" font-size="34" font-weight="700" fill="#17324D">Implemented AI Tutor</text>
+<text x="48" y="91" font-family="Arial" font-size="18" fill="#5D7188">Authenticated request → lesson-aware Gemini response → saved conversation</text>
+<rect x="60" y="135" width="880" height="190" rx="16" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="60" y="135" width="8" height="190" rx="4" fill="#2563EB" stroke="#2563EB" stroke-width="2"/>
+<text x="84" y="170" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D" text-anchor="start">Student request</text>
+<text x="84" y="201" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">CHAT · EXPLAIN · SIMPLIFY · HINT · PRACTICE</text>
+<text x="84" y="234" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Response languages: English · Tamil · Hindi</text>
+<text x="84" y="267" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Malayalam · Telugu · Kannada</text>
+<line x1="500" y1="325" x2="500" y2="360" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="370" width="880" height="270" rx="16" fill="#E7F7F4" stroke="#078B83" stroke-width="2"/>
+<rect x="60" y="370" width="8" height="270" rx="4" fill="#078B83" stroke="#078B83" stroke-width="2"/>
+<text x="84" y="405" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D" text-anchor="start">Backend Tutor service</text>
+<text x="84" y="436" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Validate message, mode and language</text>
+<text x="84" y="469" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Optional lessonId adds the Activity title and description</text>
+<text x="84" y="502" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">plus associated LessonContent</text>
+<text x="84" y="535" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Build the prompt with selected language and lesson context</text>
+<line x1="500" y1="640" x2="500" y2="675" stroke="#078B83" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="685" width="880" height="175" rx="16" fill="#FFF4DD" stroke="#D98200" stroke-width="2"/>
+<rect x="60" y="685" width="8" height="175" rx="4" fill="#D98200" stroke="#D98200" stroke-width="2"/>
+<text x="84" y="720" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D" text-anchor="start">Google Gemini API</text>
+<text x="84" y="751" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Called from the backend using server-side configuration</text>
+<text x="84" y="784" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Network access is required for new AI responses</text>
+<line x1="500" y1="860" x2="500" y2="895" stroke="#D98200" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="905" width="880" height="170" rx="16" fill="#F2EDFB" stroke="#7353B7" stroke-width="2"/>
+<rect x="60" y="905" width="8" height="170" rx="4" fill="#7353B7" stroke="#7353B7" stroke-width="2"/>
+<text x="84" y="940" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D" text-anchor="start">Persist and return</text>
+<text x="84" y="971" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Save user and AI messages in the chat session</text>
+<text x="84" y="1004" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#5D7188" text-anchor="start">Return the answer to the student interface</text>
+<rect x="60" y="1100" width="880" height="185" rx="14" fill="#EAF7EF" stroke="#18834F" stroke-width="2"/>
+<text x="82" y="1142" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#18834F" text-anchor="start">Voice and offline behavior</text>
+<text x="82" y="1185" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#5D7188" text-anchor="start">Speech input: English, Tamil and Hindi. Browser speech synthesis</text>
+<text x="82" y="1220" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#5D7188" text-anchor="start">reads replies. New AI calls need internet; the UI reports unavailability</text>
+<text x="82" y="1255" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#5D7188" text-anchor="start">and disables voice while offline.</text>
+</svg>

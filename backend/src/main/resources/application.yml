@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    import: optional:classpath:application-local.properties
+  application:
+    name: eduquest-backend
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/eduquest_v2
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+app:
+  jwt:
+    secret: EduQuestV2SuperSecretKeyForJWTAuthTokenGenerationAndSigning9876543210
+    expiration-ms: 86400000 # 24 hours
+  xp:
+    lesson-completion: 10
+  curriculum:
+    cleanup-legacy: false
+
+gemini:
+  api:
+    key: ${GEMINI_API_KEY:${spring.ai.google.genai.api-key:}}
+    model: ${GEMINI_MODEL:gemini-3.8-flash}
+    fallback-model: ${GEMINI_FALLBACK_MODEL:gemini-3.5-flash-lite}
+    url: ${GEMINI_API_URL:}
+    connect-timeout-ms: 5000
+    read-timeout-ms: 60000
+

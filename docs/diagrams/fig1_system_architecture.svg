@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="48" y="58" font-family="Arial" font-size="34" font-weight="700" fill="#17324D">EduQuest: Overall System Architecture</text>
+<text x="48" y="91" font-family="Arial" font-size="18" fill="#5D7188">Six cooperating software layers with local-first activity execution and deferred server reconciliation</text>
+<rect x="70" y="135" width="500" height="130" rx="16" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="70" y="135" width="8" height="130" rx="4" fill="#2563EB" stroke="#2563EB" stroke-width="2"/>
+<text x="94" y="170" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">1  Client application</text>
+<text x="94" y="201" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">React 18 + TypeScript single-page app</text>
+<text x="94" y="227" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Student, teacher, parent and admin portals</text>
+<rect x="650" y="135" width="500" height="130" rx="16" fill="#E7F7F4" stroke="#078B83" stroke-width="2"/>
+<rect x="650" y="135" width="8" height="130" rx="4" fill="#078B83" stroke="#078B83" stroke-width="2"/>
+<text x="674" y="170" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">2  Offline storage</text>
+<text x="674" y="201" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">IndexedDB through Dexie.js</text>
+<text x="674" y="227" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Student, activity and progress repositories</text>
+<rect x="1230" y="135" width="500" height="130" rx="16" fill="#FFF4DD" stroke="#D98200" stroke-width="2"/>
+<rect x="1230" y="135" width="8" height="130" rx="4" fill="#D98200" stroke="#D98200" stroke-width="2"/>
+<text x="1254" y="170" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">3  Synchronization</text>
+<text x="1254" y="201" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Network status monitor + client sync service</text>
+<text x="1254" y="227" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Queue manager and retryable queue items</text>
+<rect x="1230" y="415" width="500" height="130" rx="16" fill="#F2EDFB" stroke="#7353B7" stroke-width="2"/>
+<rect x="1230" y="415" width="8" height="130" rx="4" fill="#7353B7" stroke="#7353B7" stroke-width="2"/>
+<text x="1254" y="450" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">4  Transport</text>
+<text x="1254" y="481" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Axios HTTP client</text>
+<text x="1254" y="507" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Batched JSON synchronization requests</text>
+<rect x="650" y="415" width="500" height="160" rx="16" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="650" y="415" width="8" height="160" rx="4" fill="#2563EB" stroke="#2563EB" stroke-width="2"/>
+<text x="674" y="450" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">5  Backend services</text>
+<text x="674" y="481" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Spring Boot 3 / Java 17 REST APIs</text>
+<text x="674" y="507" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Sync controller + sync service</text>
+<text x="674" y="533" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">XP and streak services; JWT / RBAC</text>
+<rect x="70" y="415" width="500" height="160" rx="16" fill="#EAF7EF" stroke="#18834F" stroke-width="2"/>
+<rect x="70" y="415" width="8" height="160" rx="4" fill="#18834F" stroke="#18834F" stroke-width="2"/>
+<text x="94" y="450" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">6  Persistence</text>
+<text x="94" y="481" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">PostgreSQL production database</text>
+<text x="94" y="507" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">H2 local development and test database</text>
+<text x="94" y="533" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Relational learning and sync records</text>
+<line x1="570" y1="200" x2="650" y2="200" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1150" y1="200" x2="1230" y2="200" stroke="#078B83" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1480" y1="265" x2="1480" y2="415" stroke="#D98200" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1230" y1="480" x2="1150" y2="480" stroke="#7353B7" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="650" y1="495" x2="570" y2="495" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="860" y="340" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#078B83" text-anchor="start">local reads / writes</text>
+<text x="1210" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#D98200" text-anchor="start">online transition</text>
+<rect x="650" y="690" width="500" height="110" rx="16" fill="#F2EDFB" stroke="#7353B7" stroke-width="2"/>
+<rect x="650" y="690" width="8" height="110" rx="4" fill="#7353B7" stroke="#7353B7" stroke-width="2"/>
+<text x="674" y="725" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324D" text-anchor="start">External AI provider</text>
+<text x="674" y="756" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">Google Gemini API (AI Tutor requests; online)</text>
+<line x1="900" y1="575" x2="900" y2="690" stroke="#7353B7" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="930" y="638" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#7353B7" text-anchor="start">AI prompt / response</text>
+<rect x="70" y="865" width="1660" height="135" rx="14" fill="#F7F9FC" stroke="#E5EBF1" stroke-width="1"/>
+<text x="95" y="905" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17324D" text-anchor="start">Execution principle</text>
+<text x="95" y="942" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#24364B" text-anchor="start">Learning reads and progress writes can complete against local storage. Connectivity enables queued synchronization and server confirmation.</text>
+<text x="95" y="975" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#5D7188" text-anchor="start">AI calls require network access; authentication and role checks protect backend endpoints.</text>
+</svg>
